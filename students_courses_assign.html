@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <title>Enroll</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo2.png" alt="Industrial Automation Academy"
+                        title="Home" class="imageLogo">
+                </a>
+            </div>
+            <table class="iconsClass">
+                <td>
+                    <div class="icon"><a href="index.html"> <img src="images/home_96px.png"
+                                alt="home" title="Home"></a></div>
+                    <div class="name" data-text="Home">Home</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="#news"> <img src="images/news_96px.png" alt="news"
+                                title="News"></a></div>
+                    <div class="name" data-text="news">News</div>
+                </td>
+                <td>
+                    <div class="icon" id="enrol"><a href="students_courses_assign.html"><img
+                                src="images/sign_up_in_calendar_96px.png" alt="enroll icon"
+                                title="Enroll"></a>
+                    </div>
+                    <div class="name" data-text="news">Curriculum</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="students.html"> <img src="images/user_96px.png"
+                                alt="login icon" title="Login"></a></div>
+                    <div class="name">Student Login</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="trainers.html"> <img
+                                src="images/teacher_60px.png" alt="login icon" title="Login"></a></div>
+                    <div class="name">Trainer Login</div>
+                </td>
+            </table>
+        </div>
+    </nav>
+    <div class="container2">
+        <form class="form">
+            <p id="eError">Enter valid values</p>
+            <p> <label for="stName"></label>
+                <input id="stName" class="inputs" placeholder="Type student's name" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="stSurname" class="inputs" placeholder="Type student's surname" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="crName" class="inputs" placeholder="Type course's name" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="crStream" class="inputs" placeholder="Type course's stream" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="crType" class="inputs" placeholder="Type course's type" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="asgTitle" class="inputs" placeholder="Type assignment's title" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="asgDescr" class="inputs" placeholder="Type assignment's description" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="asgTotalMark" class="inputs" placeholder="Type assignment's total mark" value=""
+                    maxlength="25" minlength="2">
+            </p>
+            <p style="display: none;" id="dumy1">
+            </p>
+            <div class="buttons">
+                <input type="reset" class="btn2" value="Add" onclick="addEnrollment()">
+                <input type="reset" class="btn2" value="Edit" onclick="editEnrollment()">
+            </div>
+            <div class="list2">
+                <p class="head">Enrolled Students (select to edit)</p>
+                <ol id="enrollments">
+
+                </ol>
+            </div>
+        </form>
+    </div>
+
+    <div class="containerA">
+        <form class="form">
+            <p id="aError">Enter valid values</p>
+            <p>
+                <input id="asTitle" class="inputs" placeholder="Type assignment's title" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="asDescr" class="inputs" placeholder="Type assignment's description" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="asTotalMark" class="inputs" placeholder="Type assignment's total mark" value=""
+                    maxlength="25" minlength="2">
+            </p>
+            <p style="display: none;" id="dumy2">
+            </p>
+            <div class="buttons">
+                <input type="reset" class="btn" value="Add" onclick="addAssign()">
+                <input type="reset" class="btn" value="Edit" onclick="editAssign()">
+            </div>
+            <div class="list">
+                <p class="head">Available assignments (select to edit)</p>
+                <ol id="assigns">
+                </ol>
+            </div>
+        </form>
+    </div>
+    <div class="containerC">
+        <form class="form">
+            <p id="cError">Enter valid values</p>
+            <p>
+                <input id="cName" class="inputs" placeholder="Type course's name" value="" maxlength="25" minlength="2">
+            </p>
+            <p>
+                <input id="cStream" class="inputs" placeholder="Type course's stream" value="" maxlength="25"
+                    minlength="2">
+            </p>
+            <p>
+                <input id="cType" class="inputs" placeholder="Type course's type" value="" maxlength="25" minlength="2">
+            </p>
+            <p style="display: none;" id="dumy3">
+            </p>
+            <div class="buttons">
+                <input type="reset" class="btn" value="Add" onclick="addCourse()">
+                <input type="reset" class="btn" value="Edit" onclick="editCourse()">
+            </div>
+            <div class="list">
+                <p class="head">Available courses (select to edit)</p>
+                <ol id="courses">
+
+                </ol>
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+
+    <script src="./javascript/script.js"></script>
+
+
+</body>
+
+</html>

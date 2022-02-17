@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <title>Students</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo2.png" alt="Industrial Automation Academy" title="Home"
+                        class="imageLogo">
+                </a>
+            </div>
+            <table class="iconsClass">
+                <td>
+                    <div class="icon"><a href="index.html"> <img src="images/home_96px.png" alt="home" title="Home"></a>
+                    </div>
+                    <div class="name" data-text="Home">Home</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="#news"> <img src="images/news_96px.png" alt="news" title="News"></a>
+                    </div>
+                    <div class="name" data-text="news">News</div>
+                </td>
+                <td>
+                    <div class="icon" id="enrol"><a href="students_courses_assign.html"><img
+                                src="images/sign_up_in_calendar_96px.png" alt="enroll icon" title="Enroll"></a>
+                    </div>
+                    <div class="name" data-text="news">Curriculum</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="students.html"> <img src="images/user_96px.png" alt="login icon"
+                                title="Login"></a></div>
+                    <div class="name">Student Login</div>
+                </td>
+                <td>
+                    <div class="icon"><a href="trainers.html"> <img src="images/teacher_60px.png" alt="login icon"
+                                title="Login"></a></div>
+                    <div class="name">Trainer Login</div>
+                </td>
+            </table>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="form">
+            <p>
+                <input type="text" id="name" class="inputs" placeholder="Enter your first name" required>
+            </p>
+            <p>
+                <input list="surnames" id="surname" class="inputs" placeholder="Enter your surname" required>
+            </p>
+            <p>
+                <input type="mail" id="email" class="inputs" placeholder="Enter your e-mail" required>
+            </p>
+            <p>
+                <input type="password" id="pass" class="inputs" placeholder="Enter your password" required>
+            </p>
+            <p>
+                <input type="date" id="bday" class="inputs" required placeholder="Date of birth">
+            </p>
+            <div class="buttons">
+                <input type="submit" class="btn2" value="Submit">
+                <input type="reset" class="btn2" value="Clear">
+            </div>
+            <div id="requirements">
+                <p id="leT" class="invalid"> 1 letter</p>
+                <p id="nuM" class="invalid"> 1 number</p>
+                <p id="spE" class="invalid"> 1 symbol</p>
+                <p id="chR" class="invalid"> 8-14 charachters</p>
+            </div>
+        </form>
+        <div class="container">
+            <form class="form">
+                <p id="sError">Enter valid values</p>
+                <p>
+                    <input id="sName" class="inputs" placeholder="Type student's name" value="" maxlength="25"
+                        minlength="2">
+                </p>
+                <p>
+                    <input id="sSurname" class="inputs" placeholder="Type student's surname" value="" maxlength="25"
+                        minlength="2">
+                </p>
+                <p>
+                    <input id="sSubject" class="inputs" placeholder="Type student's subject" value="" maxlength="25"
+                        minlength="2">
+                </p>
+                <p style="display: none;" id="dumy">
+                </p>
+                <div class="buttons">
+                    <input type="reset" class="btn" id="add" value="Add" onclick="addStudent()">
+                    <input type="reset" class="btn" id="edit" value="Edit" onclick="editStudent()">
+                </div>
+                <div class="list">
+                    <p class="head">Enrolled Students (select to edit)</p>
+                    <ol id="students">
+
+                    </ol>
+                </div>
+            </form>
+        </div>
+        <script src="./javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f9fa ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-image: url(../images/OT-ConvergenceBlog_shutterstock_1633937677.2560.jpg);
+    background-repeat: no-repeat;
+    background-size: 3000px;
+    
+}
+.img1{
+    position: static;
+    margin: 500px;
+}
+
+.navbar{
+    position: fixed;
+    width: 100% ;
+    background: rgb(141,141,144);
+    background: linear-gradient(47deg, rgba(141,141,144,1) 0%, rgba(205,205,205,1) 35%, rgba(65,199,226,1) 100%); 
+    box-shadow:0 2px 20px 5px rgb(192, 192, 192);
+    top: 0;
+    height: 100px;   
+}
+
+.icon{
+    margin: 0 20px 0 20px;
+}
+.logo{
+    position: fixed;
+    left: 1%;
+    top: 0;
+}
+.imageLogo{
+    height: 90px;
+    width: 350px;
+}
+
+.iconsClass{
+    position: static;
+    margin: 20px auto 0 auto;
+}
+
+.icon img{
+    height: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.name{ 
+    text-align:center;
+    margin-left: 40px;
+
+}
+
+.banner{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    color: tomato;
+}
+
+.form{
+    padding-top: 30px;
+}
+.masterContainer{
+   position: static;
+   height: 100%;
+   width: 100%;
+   
+}
+.container{
+    position: static;
+    margin: 140px auto auto auto ;
+    text-align: center;
+    text-decoration:none;
+    text-overflow: clip;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px  rgb(197, 197, 197);
+    border-width: 4px;
+    border-radius: 2px;
+    border-style:none;
+    border-color: rgb(197, 197, 197);
+    width: 600px;
+    height: 600px;
+}
+
+.container2{
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    text-align: center;
+    text-decoration:none;
+    text-overflow: clip;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px  rgb(197, 197, 197);
+    border-width: 4px;
+    border-radius: 2px;
+    border-style:none;
+    border-color: rgb(197, 197, 197);
+    width: 600px;
+    height: 600px;
+}
+.containerC{
+    position: static;
+    margin: 140px auto auto auto;
+    text-align: center;
+    text-decoration:none;
+    text-overflow: clip;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px  rgb(197, 197, 197);
+    border-width: 4px;
+    border-radius: 2px;
+    border-style:none;
+    border-color: rgb(197, 197, 197);
+    width: 600px;
+    height: 600px;
+}
+
+.containerA{
+    position: static;
+    margin: 140px auto auto auto ;
+    text-align: center;
+    text-decoration:none;
+    text-overflow: clip;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px  rgb(197, 197, 197);
+    border-width: 4px;
+    border-radius: 2px;
+    border-style:none;
+    border-color: rgb(197, 197, 197);
+    width: 600px;
+    height: 600px;
+}
+.list{
+    background-color: rgb(219, 217, 217);
+    box-shadow: 2px 2px 5px  rgb(160, 160, 160);
+    border-style: none;
+    width: 500px;
+    position: static;
+    margin-left: 70px;
+    margin-top: -270px;
+    text-align: left;
+    bottom: 250px;
+    font-size: 20px;
+}
+.head{
+    text-decoration: underline;
+}
+
+.list2 p{
+    list-style-type: none;
+    text-align: center;
+}
+.list2{
+    position: static;
+    margin-top: -730px;
+    margin-left: 620px;
+    background-color: rgb(219, 217, 217);
+    box-shadow: 2px 2px 5px  rgb(160, 160, 160);
+    border-style: inset;
+    border-width: 2px;
+    width: 400px;
+    position: static;
+    text-align: left;
+    font-size: 20px;
+}
+.list li:hover{
+    cursor: pointer;
+}
+.list2 li:hover{
+    cursor: pointer;
+}
+.inputs{
+    width: 310px;
+    height: 30px;
+    border: 1px outset rgb(0, 0, 0);
+    font-size: 16px;
+    text-overflow: clip;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.inputsRed{
+    width: 310px;
+    height: 30px;
+    border: 1px outset rgb(224, 64, 64);
+    font-size: 16px;
+    text-overflow: clip;
+    margin-top: 25px;
+    padding-left: 10px;
+    
+}
+.buttons{
+    margin-left: -30px;
+    margin-top: 250px;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    background-color:transparent;
+}
+.btn2{
+    position: relative;
+    bottom: 200px;
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    background-color:transparent;
+}
+
+.btn:hover{
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    border-color: rgb(33, 163, 39);
+    color: rgb(33, 163, 39);
+    background-color: white;
+}
+.btn2:hover{
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    border-color: rgb(33, 163, 39);
+    color: rgb(33, 163, 39);
+    background-color: white;
+}
+
+/* .assign{
+    width: 300px;
+    height: 30px;
+    border: 1px outset black;
+    font-size: 17px;
+    text-overflow:clip ;
+    margin-top: 20px;
+    padding-left: 20px;
+} */
+#cError{
+    color: red;
+    display: none;
+}
+#sError{
+    color: red;
+    display: none;
+}
+#tError{
+    color: red;
+    display: none;
+}
+#aError{
+    color: red;
+    display: none;
+}
+#eError{
+    color: red;
+    display: none;
+}
+#requirements{
+    position: relative;
+    display:none;
+    text-align: center;
+    bottom: 400px;
+    left: 5px;
+    width: 130px;
+    border: black;
+    border-style:none;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px  rgb(197, 197, 197);
+}
+.valid::before{
+    content:"\2713";
+    color: rgb(22, 206, 31);
+}
+.invalid::before{
+    content:"\2012";
+    color: rgb(158, 161, 161);
+}
+p{
+    padding: 0;
+}
+footer{
+    position: sticky;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 80px;
+    color:#f0f9ff;
+    background-color: #282d32;
+    box-shadow: 0 0 20px 2px  rgb(155, 155, 155);
+}
